@@ -39,3 +39,8 @@
 - objet window
 - rendering engine (moteur de rendu)
 - web API ex. localStorage
+
+# Anti-pattern React sur le hook useState
+## ou Principe d'immutabilité en React
+- React fait une optimisation en ne regardant pas le contenu des objets mais seulement leur référence. Ainsi, l'anti-pattern en React est de modifier les valeurs dans un objet **du state**. Ceci ne provoquera pas de re-render. C'est pourquoi, il faut toujours prendre une copie d'un objet **du state** avant de le modifier et le passer à **setState**.
+- Dans les states React, on ne mute pas des objets, on les recrée.
