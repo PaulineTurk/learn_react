@@ -44,3 +44,7 @@
 ## ou Principe d'immutabilité en React
 - React fait une optimisation en ne regardant pas le contenu des objets mais seulement leur référence. Ainsi, l'anti-pattern en React est de modifier les valeurs dans un objet **du state**. Ceci ne provoquera pas de re-render. C'est pourquoi, il faut toujours prendre une copie d'un objet **du state** avant de le modifier et le passer à **setState**.
 - Dans les states React, on ne mute pas des objets, on les recrée.
+
+# React re-render asynchrone
+- La nouvelle valeur d'un render n'est JAMAIS accessible via la variable dans le même render. La nouvelle valeur n'est accessible qu'au prochain render
+- Ainsi setState1 puis setState2 est équivalent à setState2 puis setState1
