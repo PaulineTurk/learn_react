@@ -67,3 +67,10 @@
 - l'indexation numérique est faite automatiquement et initialisée à 0
 - chercher tableau[-1] revient à chercher la propriété -1 qui n'existe pas, sauf si on la rajoute
 - pour utilise la logique de rétrocompte, utiliser `.at()` ex. monTableau.at(-1) renvoie bien le dernier élément de monTableau
+
+
+# React *key*
+- **key** est une propriété React qu'on peut ajouter dans les balises HTML
+- utilisé en interne par React
+- ne remonte pas dans le DOM 
+- **key** permet d'identifier les éléments de manière unique dans un arbre de dépendance d'éléments et d'optimiser en conséquence le re-render/update/ création/ deletion des éléments
