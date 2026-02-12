@@ -80,3 +80,17 @@
 - lorsqu'on défini un objet par const, on lui attirbue une valeur qui ne peut pas être changée
 - mais si const dépend d'un autre objet dont la valeur est modifiée, alors au prochain rerender, une nouvelle const est crée avec la nouvelle valeur calculée
 - utiliser **let** si besoin de réassignation
+
+# map
+- méthode de Array
+- on peut choisir de renseigner 1 ou 2 paramètres
+```
+# 1 paramètre
+arr.map(element => {})
+arr.map((_, index) => {})  
+
+# 2 paramètres
+arr.map((element, index) => {})    
+```
+- map ne fait pas de mutation de l'array de départ
+- map return un nouvel array
