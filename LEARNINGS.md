@@ -48,3 +48,22 @@
 # React re-render asynchrone
 - La nouvelle valeur d'un render n'est JAMAIS accessible via la variable dans le même render. La nouvelle valeur n'est accessible qu'au prochain render
 - Ainsi setState1 puis setState2 est équivalent à setState2 puis setState1
+
+# Tableau (Array) en JavaScript
+- ex. [1, 2, 3]
+- on ne parle pas de liste en JS
+- un tableau est un objet optimisé pour les index numériques
+- exemple de la structure d'un tableau
+```
+{
+  0: value0,
+  1: value1,
+  2: value2,
+  length: n
+}
+```
+
+- la propriété length d'un tableau est max(index valide >=0) + 1
+- l'indexation numérique est faite automatiquement et initialisée à 0
+- chercher tableau[-1] revient à chercher la propriété -1 qui n'existe pas, sauf si on la rajoute
+- pour utilise la logique de rétrocompte, utiliser `.at()` ex. monTableau.at(-1) renvoie bien le dernier élément de monTableau
